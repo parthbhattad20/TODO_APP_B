@@ -10,6 +10,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
+app.get("/",(req,res)=>{
+    res.send("hello");
+});
+
 mongoose
     .connect(
         "mongodb+srv://Parth2:Parth20@cluster0.nlyt64i.mongodb.net/?retryWrites=true&w=majority",
